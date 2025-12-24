@@ -1,10 +1,10 @@
 # Masters-Dissertation-LaTeX-Template
-Overleaf/LaTeX dissertation template for TU Masters students: IOST, SMSTU
+Overleaf/LaTeX dissertation template for TU Masters students: Institute of Science and Technology (IoST), School of Mathematical Sciences, Tribhuvan University (SMS TU)
 
 # 📘 SMSTU – MDS Dissertation LaTeX Template
 
 A professionally designed **Overleaf / LaTeX dissertation template** for  
-**Master of Data Science (MDS)** students of **SMSTU**.
+**Master's in Data Science (MDS)** students of **IOST SMSTU**.
 
 This template follows standard academic formatting and is ready for:
 - Dissertation / Thesis writing
