@@ -1,0 +1,40 @@
+
+🔹 This makes your work **academically legitimate**  
+🔹 Examiners and supervisors *like* this section  
+🔹 Students won’t “forget” to credit you 😉
+
+---
+
+# 2️⃣ `CITATION.cff` (GitHub “Cite this repository” Button)
+
+GitHub **automatically detects** this file and shows a **“Cite this repository”** button.
+
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this dissertation template, please cite it as below."
+type: software
+title: "SMSTU MDS Dissertation LaTeX Template"
+version: "1.0.0"
+year: 2025
+
+authors:
+  - family-names: Sapkota
+    given-names: Arpan
+    website: "https://www.arpansapkota.com.np/"
+    email: "rpnsapkota@gmail.com"
+
+date-released: 2025-12-25
+
+repository-code: "https://github.com/arpansapkota/Masters-Dissertation-LaTeX-Template"
+url: "https://github.com/arpansapkota/Masters-Dissertation-LaTeX-Template"
+
+license: MIT
+
+keywords:
+  - LaTeX
+  - Dissertation
+  - Thesis
+  - Overleaf
+  - Master's in Data Science
+  - Academic Writing
