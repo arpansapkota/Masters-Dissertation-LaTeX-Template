@@ -24,18 +24,39 @@ This template follows standard academic formatting and is ready for:
 
 ---
 
+## 📌 Attribution Requirement
+
+This dissertation template was developed by **Arpan Sapkota**.
+
+If you use, modify, or distribute this template (including forks),
+**you must retain the original author credit** in:
+
+- This README file
+- The commented header inside the `.tex` files
+
+Academic use is encouraged. Commercial redistribution as-is is discouraged.
+
+---
+
 ## 📂 Project Structure
 
 ```text
 .
 ├── main.tex                # Main LaTeX file
-├── chapters/
+│   ├── titlepage.tex
+│   ├── declarations.tex
+│   ├── aprovals.tex
+│   ├── acknowledgement.tex
 │   ├── abstract.tex
+│   ├── toc, lof, lot, abs.tex
+├── chapters/
 │   ├── introduction.tex
 │   ├── literature_review.tex
 │   ├── methodology.tex
 │   ├── results.tex
 │   └── conclusion.tex
+│   ├── references.tex
+│   ├── appendix.tex
 ├── figures/
 ├── bibliography.bib
 └── README.md
