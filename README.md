@@ -1,8 +1,10 @@
 [![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-green)](
 https://www.overleaf.com/docs?snip_uri=https://github.com/arpansapkota/Masters-Dissertation-LaTeX-Template/archive/refs/heads/main.zip
 )
-
 [![DOI](https://zenodo.org/badge/1122300229.svg)](https://doi.org/10.5281/zenodo.18048940)
+![GitHub stars](https://img.shields.io/github/stars/arpansapkota/Masters-Dissertation-LaTeX-Template)
+![GitHub forks](https://img.shields.io/github/forks/arpansapkota/Masters-Dissertation-LaTeX-Template)
+
 
 
 # Masters-Dissertation-LaTeX-Template
