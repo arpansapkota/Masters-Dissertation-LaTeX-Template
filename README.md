@@ -1,3 +1,8 @@
+[![Open in Overleaf](https://img.shields.io/badge/Open%20in-Overleaf-green)](
+https://www.overleaf.com/docs?snip_uri=https://github.com/arpansapkota/Masters-Dissertation-LaTeX-Template/archive/refs/heads/main.zip
+)
+
+
 # Masters-Dissertation-LaTeX-Template
 Overleaf/LaTeX dissertation template for TU Masters students: Institute of Science and Technology (IoST), School of Mathematical Sciences, Tribhuvan University (SMS TU)
 
