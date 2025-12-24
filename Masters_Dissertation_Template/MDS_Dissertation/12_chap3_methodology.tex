@@ -1,0 +1,105 @@
+\chapter{Methodology}
+
+\section{Research Method}
+
+
+
+\section{Data Collection}
+
+
+
+
+\section{Data Preprocessing}
+
+\subsection{Text Cleaning}
+
+\subsection{Data Normalization}
+
+\subsection{Tokenization}
+
+\section{LLM based Data Augmentation}
+
+
+\section{Fine- Tuning the mBART Model}
+
+
+\subsection{mBART: Architecture and Working Mechanism}
+
+
+\subsection{Transformer Architecture in mBART}
+
+\paragraph {Encoder:}
+
+
+\paragraph{Decoder:}
+
+
+\paragraph{Language-Aware Training}
+
+
+
+\subsection{Pretraining Objective}
+
+
+\subsection{Fine-Tuning for Summarization}
+
+\subsection{System Architecture of mBART for Summarization}
+
+
+\paragraph{Multilingual Denoising Pretraining:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{Transformer Encoder (Pretraining Stage):}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{Transformer Decoder (Pretraining Stage):}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\paragraph{Fine-Tuning on Summarization Task:}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{Transformer Encoder (Fine-tuning Stage):}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{Transformer Decoder (Fine-tuning Stage):}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{Output: Summary (Nepali):}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Implementation Details}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Model Deployment}
+To make the fine-tuned models publicly accessible and reusable, both versions of the \gls{mbart} model were deployed to the Hugging Face Model Hub \cite{wolf-etal-2020-transformers}.
+\subsection*{Deployment Details}
+Two separate models were deployed based on the datasets used during the fine-tuning process:
+\begin{itemize}
+    \item \textbf{Raw Data Fine-Tuned Model:} This model was trained on the original Nepali legal summaries, without any paraphrasing or augmentation. It is hosted at 
+    \footnote{\href{https://huggingface.co/arpansapkota/Legal_mbart_large_50_finetuned_RawData}
+    {\textit{https://huggingface.co/arpansapkota/Legal\_mbart\_large\_50\_finetuned\_RawData}}}
+    
+    \item \textbf{Paraphrased Data Fine-Tuned Model:} This version was fine-tuned using the \gls{llm} augmented summaries, where paraphrasing was performed using the LLaMA3 8B 8192 model \citep{meta2024llama3} through the Groq \gls{api}. It is accessible at 
+    \footnote{\href{https://huggingface.co/arpansapkota/Legal_mbart_large_50_finetuned_ParaData}{\textit{https://huggingface.co/arpansapkota/Legal\_mbart\_large\_50\_finetuned\_ParaData}}}
+\end{itemize}
+
+
+\section{Model Evaluation}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Evaluation Dataset}
+The dataset was split using the hold-out validation technique. 
+\begin{itemize}
+    \item \textbf{Training Set:} 80\% of the data was used for training the model.
+    \item \textbf{Validation Set:} 10\% of the data was used to evaluate the model performance every after 200 steps.
+    \item \textbf{Test Set:} 10\% of the data was reserved for testing the model's generalization and summarization ability.
+\end{itemize}
+
+A fixed seed (42) was used to ensure consistent and reproducible splits during model fine-tuning.
+
+\subsection{Evaluation Metrics}
+
+\paragraph{ROUGE (Recall-Oriented Understudy for Gisting Evaluation):}
+
+\paragraph{BLEU (Bilingual Evaluation Understudy):}

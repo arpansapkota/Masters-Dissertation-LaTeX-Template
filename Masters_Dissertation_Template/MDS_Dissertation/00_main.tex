@@ -1,0 +1,165 @@
+\documentclass[12pt,a4paper,natbibapa,hyperref]{report}
+\usepackage[a4paper,top=2.5cm,bottom=2cm,left=3.5cm,right=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{apacite}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{apacite} % APA citation style
+\usepackage{natbib}  % for APA-style in-text citations
+\usepackage{float}
+\usepackage{amsmath} 
+
+\usepackage[none]{hyphenat}
+
+\usepackage{amssymb} % Provides \mathbb for blackboard bold fonts
+
+\usepackage{multirow} 
+\usepackage{ragged2e} % for justification, aligning the text evenly along both the left and right margins
+\usepackage{lipsum}
+
+% Required Packages for Acronyms
+\usepackage[utf8]{inputenc}
+\usepackage[acronym]{glossaries}
+\makeglossaries
+
+
+\usepackage{pdfpages}
+
+% Define Acronyms
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{bart}{BART}{Bidirectional and Auto-Regressive Transformers}
+\newacronym{bert}{BERT}{Bidirectional Encoder Representations from Transformers}
+\newacronym{bleu}{BLEU}{Bilingual Evaluation Understudy}
+\newacronym{cuad}{CUAD}{Contract Understanding Atticus Dataset}
+\newacronym{gpt}{GPT}{Generative Pretrained Transformer}
+\newacronym{gpu}{GPU}{Graphics Processing Unit}
+\newacronym{llm}{LLM}{Large Language Model}
+\newacronym{meteor}{METEOR}{Metric for Evaluation of Translation with Explicit Ordering}
+\newacronym{mlsum}{MLSUM}{Multilingual Summarization Dataset}
+\newacronym{mllm}{mLLM}{Multilingual Large Language Model}
+\newacronym{mbart}{mBART}{Multilingual Bidirectional and Auto-Regressive Transformers}
+\newacronym{mbert}{mBERT}{Multilingual Bidirectional Encoder Representations from Transformers}
+\newacronym{mt5}{mT5}{Multilingual Text-to-Text Transfer Transformer}
+\newacronym{ner}{NER}{Named Entity Recognition}
+\newacronym{nkp}{NKP}{Nepal Kanun Patrika}
+\newacronym{nlg}{NLG}{Natural Language Generation}
+\newacronym{nlp}{NLP}{Natural Language Processing}
+\newacronym{ocr}{OCR}{Optical Character Recognition}
+\newacronym{pos}{POS}{Part-of-Speech}
+\newacronym{rnn}{RNN}{Recurrent Neural Network}
+\newacronym{rouge}{ROUGE}{Recall-Oriented Understudy for Gisting Evaluation}
+\newacronym{s2s}{Seq2Seq}{Sequence-to-Sequence}
+\newacronym{sov}{SOV}{Subject-Object-Verb}
+\newacronym{svo}{SVO}{Subject-Verb-Object}
+\newacronym{t5}{T5}{Text-to-Text Transfer Transformer}
+\newacronym{tfidf}{TF-IDF}{Term Frequency-Inverse Document Frequency}
+\newacronym{xlmr}{XLM-R}{Cross-Lingual Language Model-RoBERTa}
+
+
+
+
+
+
+% Chapter titles formatted with Times New Roman, uppercase, and numbering
+\titleformat{\chapter}[block]
+  {\normalfont\bfseries\centering\fontsize{16pt}{1pt}\selectfont\MakeUppercase}
+  {CHAPTER \thechapter:}{0.5em}{\MakeUppercase}
+\titlespacing*{\chapter}
+  {0pt}{10pt plus 2pt minus 2pt}{20pt}
+\titlespacing*{\section}{0pt}{20pt}{0pt}  % Adjust the space after the section title
+\titlespacing*{\subsection}{0pt}{20pt}{0pt}  
+
+
+% Section titles formatted with Times New Roman, numbering
+\titleformat{\section}
+  {\normalfont\bfseries\fontsize{14pt}{17pt}\selectfont}{\thesection}{14pt}{}
+
+% Subsection titles formatted accordingly
+\titleformat{\subsection}
+  {\normalfont\bfseries\fontsize{12pt}{15pt}\selectfont}{\thesubsection}{12pt}{}
+
+
+% Redefine the contents heading to uppercase bold
+\renewcommand{\contentsname}{
+  \vspace*{-2.5cm}  % Adjust as needed to remove or reduce vertical space
+  \begin{center}
+    \bfseries\fontsize{16pt}{19pt}\selectfont \MakeUppercase{Table of Contents}
+  \end{center}
+}
+
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parindent}{0pt}
+%\setlength{\parskip}{0.5\baselineskip}
+
+
+% Centered and styled list titles
+% List of Figures
+\renewcommand{\listfigurename}{
+  \vspace*{-2.5cm}  % Adjust as needed to remove or reduce vertical space
+  \begin{center}
+    \bfseries\fontsize{16pt}{19pt}\selectfont \MakeUppercase{List of Figures}
+  \end{center}
+}
+
+
+\renewcommand{\listtablename}{
+  \vspace*{-2.5cm}  % Adjust as needed to remove or reduce vertical space
+  \begin{center}
+    \bfseries\fontsize{16pt}{19pt}\selectfont \MakeUppercase{List of Tables}
+  \end{center}
+}
+
+
+\pagenumbering{roman}
+\pagestyle{plain}
+
+
+\begin{document}
+\justifying
+\fontsize{12pt}{18pt}\selectfont
+
+\input{MDS_Dissertation/01_titlepage}
+\newpage
+\input{MDS_Dissertation/02_plagiarism}
+\newpage
+\input{MDS_Dissertation/02_declaration}
+\newpage
+\input{MDS_Dissertation/03_supervisor}
+\newpage
+\input{MDS_Dissertation/04_approval}
+\newpage
+\input{MDS_Dissertation/05_acknowledgment}
+\newpage 
+\input{MDS_Dissertation/06_abstract}
+\newpage
+
+\fontsize{12pt}{12pt}\selectfont
+\tableofcontents
+\fontsize{12pt}{18pt}\selectfont
+\newpage
+\input{MDS_Dissertation/08_lists}
+\newpage
+\input{MDS_Dissertation/09_abbreviations}
+\newpage
+\pagenumbering{arabic}
+
+\input{MDS_Dissertation/10_chap1_introduction}
+\input{MDS_Dissertation/11_chap2_literature}
+\input{MDS_Dissertation/12_chap3_methodology}
+\input{MDS_Dissertation/13_chap4_results}
+\input{MDS_Dissertation/14_chap5_conclusion}
+
+\newpage
+\input{MDS_Dissertation/15_references}
+\newpage
+\input{MDS_Dissertation/16_appendices}
+
+%\bibliography{17_bibliography.bib}
+\end{document}
