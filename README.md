@@ -38,6 +38,33 @@ Academic use is encouraged. Commercial redistribution as-is is discouraged.
 
 ---
 
+## 📖 How to Cite This Template
+
+If you use this LaTeX template for your dissertation, thesis, or any academic
+work, please cite it to acknowledge the original author.
+
+### Recommended Citation (APA Style)
+
+Sapkota, A. (2025). *SMSTU MDS Dissertation LaTeX Template* (Version 1.0)
+[Computer software]. GitHub.
+https://github.com/arpansapkota/Masters-Dissertation-LaTeX-Template
+
+### BibTeX Citation
+
+```bibtex
+@software{sapkota_smstu_mds_template_2025,
+  author  = {Sapkota, Arpan},
+  title   = {SMSTU MDS Dissertation LaTeX Template},
+  year    = {2025},
+  version = {1.0},
+  publisher = {GitHub},
+  url     = {https://github.com/arpansapkota/Masters-Dissertation-LaTeX-Template},
+  note    = {LaTeX/Overleaf dissertation template for MDS students at SMSTU}
+}
+```
+
+---
+
 ## 📂 Project Structure
 
 ```text
